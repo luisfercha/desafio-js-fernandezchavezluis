@@ -8,11 +8,21 @@ const productos = [{ código: "SN",  nombre: "Silla Nordica", precio: 100, medid
 for (const producto of productos) {
     let contenedor = document.createElement("div");
     
-    contenedor.innerHTML = `<h3> ${producto.nombre}</h3>
+    contenedor.innerHTML = `<br>
+                            <img src="https://cdn.pixabay.com/photo/2017/01/25/17/35/picture-2008484_960_720.png" width="100" height="100" alt="">
+                            <h3> ${producto.nombre}</h3>
                             <p>  Código: ${producto.código}</p>
                             <p>  Medidas: ${producto.medidas}</p>
                             <b> Precio: $ ${producto.precio}</b>
-                            <p><a href="">Comprar</a></p>`;
+                            <br>
+                            <br>
+                            <div>
+                                <input type="button" value="Comprar" onclick="alert('Iniciaremos el proceso de compra');" />
+                                <input type="button" value="Me gusta" onclick="alert('Marcaste este producto como favorito');" />
+                            </div>
+                            <br>`;
     document.body.appendChild(contenedor);
 }
+
+
 

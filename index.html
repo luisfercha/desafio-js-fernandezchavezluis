@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafío 8: Interactuar con HTML</title>
+    <title>Desafío 9: Complementario - Generar HTML</title>
 </head>
 <body>
     <header nav>
@@ -14,23 +14,30 @@
             <ul>Productos</ul>
             <ul>Contacto</ul>
         </li>
-        <div>
-            <p>Botón de WhatsApp</p>
-        </div>
     </header>
     <section>
-        <!--Acá poner la lista de productos-->
+        <h1>FERMOLIER</h1>
+        <p>Taller de Muebles y Objetos</p>
     </section>
+    <section>
+        <!--Acá aparece el array de productos con imagenes, titulos, parrafos y botones-->
+        <script src="objetos.js"></script>
+    </section>
+    <br>
+    <br>
+    <br>
+    <form id="formulario" action="url">
+        <h1>Contactános</h1>
+        <input type="text" name="Nombre y Apellido" placeholder="Nombre y Apellido">
+        <input type="number" name="Celular" placeholder="Celular">
+        <input type="text" name="E-mail" placeholder="E-mail">
+        <input type="text" name="Consulta" placeholder="Escribe tu consulta">
+        <input type="submit" value="Enviar">
+        <script src="eventos.js"></script>
+    </form>  
     <footer>
-        <div>
-            <p>Mapa Ubicación</p>
-            <div>
-                <p>Formulario de Contacto</p>
-            </div>
-        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d797.2820125039107!2d-58.5616944751793!3d-34.640138151673206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7e4be288c51%3A0x742b29fb11b0c57!2sMUEBLES%20RM!5e0!3m2!1ses-419!2sar!4v1638979808431!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </footer>
-
-    <script src="script.js"></script>
-
+    
 </body>
 </html>
